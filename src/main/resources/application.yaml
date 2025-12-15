@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: vid-gateway-service
+server:
+    port: 18081
+eureka:
+    client:
+        service-url:
+            defaultZone: http://${EUREKA_HOSTNAME:localhost}:${EUREKA_PORT:8761}/eureka
